@@ -57,7 +57,8 @@ a {
   color: #fff;
 }
 
-.menu__left img, img ~ a,
+.menu__left img,
+img ~ a,
 .menu__right div,
 .search ~ a {
   margin-right: 35px;
@@ -103,7 +104,6 @@ a {
 
 .main-title ~ a {
   padding: 0 60px;
-
 }
 
 .link {
@@ -201,7 +201,7 @@ a {
 }
 
 .circle_gray {
-  background: #C4C4C4;
+  background: #c4c4c4;
 }
 
 .circle_black {
@@ -213,7 +213,7 @@ a {
 }
 
 .circle_yellow {
-  background: #fdB431;
+  background: #fdb431;
 }
 
 .circle_camel {
@@ -229,7 +229,7 @@ a {
 }
 
 .circle_light-blue {
-  background: #257dA9;
+  background: #257da9;
 }
 
 .about {
@@ -331,17 +331,17 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-  body{
+  body {
     width: 768px;
     margin: 0;
   }
 
   .menu {
-  display: none;
-}
+    display: none;
+  }
 
   .mobile-menu {
-    display:flex;
+    display: flex;
     width: inherit;
     justify-content: space-between;
     align-items: center;
@@ -374,7 +374,7 @@ a {
   }
 
   .main-title ~ a {
-  padding-left: 44px;
+    padding-left: 44px;
 }
 
   .head {
@@ -464,7 +464,7 @@ a {
 
   .mobile-nav {
     width: 40px;
-    height: 21px
+    height: 21px;
   }
 
   .head {
