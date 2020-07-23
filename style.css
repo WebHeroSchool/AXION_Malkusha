@@ -346,7 +346,6 @@ img ~ a,
     justify-content: space-between;
     align-items: center;
     padding: 41px 46px 10px 43px;
-
   }
 
   .mobile-logo {
@@ -375,7 +374,7 @@ img ~ a,
 
   .main-title ~ a {
     padding-left: 44px;
-}
+  }
 
   .head {
     background: url(Pics/rob-potter-422534-unsplash2.png) no-repeat;
