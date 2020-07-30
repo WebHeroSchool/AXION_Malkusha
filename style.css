@@ -182,8 +182,7 @@ img ~ a,
   text-align: justify;
   width: 206px;
   flex-grow: 1;
-
-  }
+}
 
 .price {
   font-size: 14px;
@@ -552,8 +551,8 @@ img ~ a,
     width: 768px;
     height: 26px;
     border: 26px solid transparent;
-    border-bottom: 0px solid transparent;
-    border-right: 0px solid transparent;
+    border-bottom: 0 solid transparent;
+    border-right: 0 solid transparent;
     border-left: 768px solid #000;
     left: 0;
     top: -50px;
