@@ -25,7 +25,6 @@ a {
 
 .header {
   width: inherit;
-  margin: inherit;
   margin-bottom: 28px;
 }
 
@@ -57,7 +56,10 @@ a {
   color: #fff;
 }
 
-.menu__left img,
+.menu__left img {
+  margin-right: 45px;
+}
+
 img ~ a,
 .menu__right div,
 .search ~ a {
@@ -65,6 +67,7 @@ img ~ a,
 }
 
 .search {
+  width: 178px;
   border-bottom: 1px solid;
 }
 
@@ -91,9 +94,10 @@ img ~ a,
   width: inherit;
   height: 280px;
   display: block;
+  text-align: left;
 }
 
-.main-title {
+.head__title {
   color: white;
   padding: 90px 60px 0;
   margin: 0 0 15px;
@@ -102,7 +106,7 @@ img ~ a,
   text-transform: uppercase;
 }
 
-.main-title ~ a {
+.head__title ~ a {
   padding: 0 60px;
 }
 
@@ -122,8 +126,8 @@ img ~ a,
   color: #fff;
 }
 
-.head__title {
-  margin: 53px 0 15px;
+.main-title {
+  margin: 53px 0 3px;
 }
 
 .title {
@@ -135,63 +139,75 @@ img ~ a,
 
 .row {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  flex-grow: 1;
+  position: relative;
   margin-bottom: 26px;
 }
 
 .item {
-  width: 230px;
-  height: 261px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   flex-grow: 1;
   position: relative;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 248px;
+  height: 261px;
 }
 
-.item :not ( : last-child ) : after {
+.row :not(:last-child) ::after {
   content: "";
   position: absolute;
   right: 0;
   top: 50px;
   width: 1px;
   height: 100px;
-  background: gray;
+  background: silver;
 }
 
-.item__name {
+.item_img {
   align-self: flex-start;
-  margin: 0 12px;
+  margin: 0 0 25px 18px;
+}
+
+.item_name {
   font-size: 12px;
   line-height: 11px;
+  margin: 0 0 10px;
+  flex-grow: 1;
 }
 
 .item__info {
   display: flex;
-  width: inherit;
-  margin: 0 12px 21px;
-  justify-content: space-between;
-  flex-direction: row;
   align-items: center;
-  align-self: flex-start;
+  justify-content: space-between;
+  text-align: justify;
+  width: 206px;
+  flex-grow: 1;
+
 }
 
 .price {
   font-size: 14px;
-  font-weight: bold;
   line-height: 13px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  text-align: justify;
 }
 
 .circles {
   display: flex;
   justify-content: space-between;
+  align-self: center;
 }
 
 .circle {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  margin-right: 8px;
+  margin: 0 4px;
 }
 
 .circle_main {
@@ -232,6 +248,20 @@ img ~ a,
   background: #257da9;
 }
 
+.item-2,
+.item-3 {
+  width: 266px;
+  padding-left: 27px;
+}
+
+.item-1 {
+  padding-left: 11px;
+}
+
+.item-4 {
+  padding-left: 25px;
+}
+
 .about {
   background: #000;
   width: inherit;
@@ -251,6 +281,7 @@ img ~ a,
   display: flex;
   flex-direction: column;
   width: 266px;
+  text-align: left;
 }
 
 .small-title {
@@ -285,28 +316,78 @@ img ~ a,
 @media (max-width: 1024px) {
   body {
     width: 930px;
-    margin: 32px 47px;
+  }
+
+  .header {
+    margin-bottom: 42px;
+  }
+
+  .menu__left img {
+    margin-right: 30px;
+    width: 61px;
+  }
+
+  .menu__right {
+    padding-left: 100px;
+  }
+
+  .search {
+    width: 160px;
+  }
+
+  .search ~ a {
+    margin-right: 25px;
+}
+
+  .head {
+    height: 252px;
+    background: url(Pics/rob-potter-422534-unsplash3.png) no-repeat;
   }
 
   .head__title {
+    color: white;
+    padding: 78px 0 5px 53px;
+    margin: 0;
+  }
+
+  .main-title {
     margin-top: 67px;
   }
 
   .row {
-    margin-bottom: 52px;
+    margin-bottom: 64px;
   }
 
-  .item {
-    width: 208px;
+  .item-1 {
+  padding-left: 0;
+  width: 225px;
   }
 
-  .item__name,
+  .item-2,
+  .item-3 {
+    width: 240px;
+    padding: 0 33px 0 20px;
+  }
+
+  .item_img {
+    width: 170px;
+    margin-bottom: 41px;
+  }
+
+  .item_name,
   .item__info {
-    margin: 0 11px;
+    padding: 0 11px;
+  }
+
+  .item_name {
+    margin-bottom: 6px;
+  }
+
+  .circle {
+    margin: 0 3px;
   }
 
   .about {
-    width: inherit;
     height: 442px;
   }
 
@@ -333,7 +414,10 @@ img ~ a,
 @media screen and (max-width: 768px) {
   body {
     width: 768px;
-    margin: 0;
+  }
+
+  .header {
+    margin-bottom: 25px;
   }
 
   .menu {
@@ -360,11 +444,11 @@ img ~ a,
     border-bottom: solid 8px #000;
   }
 
-  .main-title {
+  .head__title {
     font-size: 50px;
     line-height: 48px;
     margin-bottom: 36px;
-    padding-left: 44px;
+    padding: 125px 0 5px 44px;
   }
 
   .upper-link_white {
@@ -372,30 +456,44 @@ img ~ a,
     line-height: 19px;
   }
 
-  .main-title ~ a {
+  .head__title ~ a {
     padding-left: 44px;
   }
 
   .head {
     background: url(Pics/rob-potter-422534-unsplash2.png) no-repeat;
     width: 1527px;
-    height: 454px;
+    height: 415px;
   }
 
-  .head__title {
-    margin: 67px 0 20px;
+  .title {
+    font-size: 30px;
+    line-height: 29px;
+  }
+
+  .main-title {
+    display: inline-block;
+    width: 350px;
+    height: 29px;
+    margin: 67px 20px 50px;
   }
 
   .row {
-    margin: 0 70px;
+    justify-content: space-between;
+    height: 352px;
+    margin-bottom: 0;
   }
 
-  .item {
-    width: 281px;
+  .row :not(:last-child) ::after {
+    display: none;
+}
+
+  .item-1 {
+    margin-left: 80px;
   }
 
   .item-2 {
-    margin-left: 66px;
+    padding: 0;
   }
 
   .item-3,
@@ -403,28 +501,57 @@ img ~ a,
     display: none;
   }
 
-  .item__name,
-  .item__info {
-    padding: 0 14px;
+  .item_img {
+    width: 230px;
+    height: 233px;
   }
 
-  .about::before {
-    position: absolute;
-    width: 1000px;
-    height: 1000px;
-    background: #000;
-    transform: rotate(30deg);
+  .item_name {
+    font-size: 20px;
+    line-height: 19px;
+    text-align: left;
+    margin-bottom: 16px;
+
+  }
+
+  .item__info {
+    flex-shrink: 0;
+    width: 260px;
+    padding-right: 0;
+  }
+
+  .price {
+    font-size: 25px;
+    line-height: 24px;
+  }
+
+  .circle {
+    width: 20px;
+    height: 20px;
+    margin: 0 2px;
   }
 
   .about {
     position: relative;
-    width: inherit;
-    height: inherit;
+    overflow: hidden;
+    display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-
+    background: white;
+    z-index: 10;
   }
+
+  .about::before {
+      content: "";
+      position: absolute;
+      width: 1633.6px;
+      height: 1575.83px;
+      left: -323.91px;
+      top: -50px;
+      background: #000000;
+      transform: rotate(2.6deg);
+    }
 
   .about_img {
     width: 697px;
@@ -472,7 +599,7 @@ img ~ a,
     height: 191px;
   }
 
-  .main-title {
+  .head__title {
     font-size: 20px;
     line-height: 19px;
     padding: 62px 40px 9px;
