@@ -481,7 +481,7 @@ img ~ a,
 
   .row :not(:last-child) ::after {
     display: none;
-}
+  }
 
   .item-1 {
     margin-left: 80px;
@@ -506,7 +506,6 @@ img ~ a,
     line-height: 19px;
     text-align: left;
     margin-bottom: 16px;
-
   }
 
   .item__info {
