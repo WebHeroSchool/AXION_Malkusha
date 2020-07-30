@@ -633,7 +633,7 @@ img ~ a,
 
   .head__title ~ a {
     padding-left: 50px;
-}
+  }
 
   .title {
     font-size: 20px;
