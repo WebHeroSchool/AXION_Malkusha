@@ -95,19 +95,15 @@ img ~ a,
   height: 280px;
   display: block;
   text-align: left;
+  padding: 90px 60px 0;
 }
 
 .head__title {
   color: white;
-  padding: 90px 60px 0;
   margin: 0 0 15px;
   font-size: 30px;
   line-height: 29px;
   text-transform: uppercase;
-}
-
-.head__title ~ a {
-  padding: 0 60px;
 }
 
 .menu__link,
@@ -115,9 +111,11 @@ img ~ a,
   font-size: 12px;
   line-height: 11px;
   color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: inherit;
 }
 
-.menu__upper-link,
 .upper-link {
   text-transform: uppercase;
   font-weight: bold;
@@ -128,23 +126,20 @@ img ~ a,
   color: #fff;
 }
 
-.sneakers-block {
+.sneakers {
   display: flex;
   flex-direction: column;
 }
 
-.sneakers-block__main-title {
-  margin: 53px 0 3px;
-}
-
-.sneakers-block__title {
+.sneakers__title {
   font-size: 22px;
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+  margin: 53px 0 3px;
 }
 
-.sneakers {
+.sneakers-row {
   display: flex;
   flex-direction: row;
   flex-grow: 1;
@@ -163,7 +158,7 @@ img ~ a,
   height: 261px;
 }
 
-.sneakers :not(:last-child) ::after {
+.sneakers-row :not(:last-child) ::after {
   content: "";
   position: absolute;
   right: 0;
@@ -348,19 +343,19 @@ img ~ a,
   .head {
     height: 252px;
     background: url(Pics/rob-potter-422534-unsplash3.png) no-repeat;
+    padding: 78px 0 5px 53px;
   }
 
   .head__title {
     color: white;
-    padding: 78px 0 5px 53px;
     margin: 0;
   }
 
-  .sneakers-block__main-title {
+  .sneakers__title {
     margin-top: 67px;
   }
 
-  .sneakers {
+  .sneakers-row {
     margin-bottom: 64px;
   }
 
@@ -450,11 +445,18 @@ img ~ a,
     border-bottom: solid 8px #000;
   }
 
+  .head {
+    background: url(Pics/rob-potter-422534-unsplash2.png) no-repeat;
+    width: 1527px;
+    height: 415px;
+    padding: 125px 44px 0;
+  }
+
   .head__title {
     font-size: 50px;
     line-height: 48px;
     margin-bottom: 36px;
-    padding: 125px 0 5px 44px;
+    padding-bottom: 5px;
   }
 
   .upper-link_white {
@@ -462,35 +464,22 @@ img ~ a,
     line-height: 19px;
   }
 
-  .head__title ~ a {
-    padding-left: 44px;
-  }
-
-  .head {
-    background: url(Pics/rob-potter-422534-unsplash2.png) no-repeat;
-    width: 1527px;
-    height: 415px;
-  }
-
-  .sneakers-block__title {
+  .sneakers__title {
     font-size: 30px;
     line-height: 29px;
-  }
-
-  .sneakers-block__main-title {
     display: inline-block;
     width: 350px;
     height: 29px;
     margin: 67px 20px 50px;
   }
 
-  .sneakers {
+  .sneakers-row {
     justify-content: space-between;
     height: 352px;
     margin-bottom: 45px;
   }
 
-  .sneakers :not(:last-child) ::after {
+  .sneakers-row :not(:last-child) ::after {
     display: none;
   }
 
@@ -628,12 +617,13 @@ img ~ a,
     background: url(Pics/rob-potter-422534-unsplash1.png) no-repeat;
     width: 706px;
     height: 191px;
+    padding: 70px 50px 0;
   }
 
   .head__title {
     font-size: 20px;
     line-height: 19px;
-    padding: 70px 50px 9px;
+    padding-bottom: 9px;
     margin: 0;
   }
 
@@ -642,22 +632,15 @@ img ~ a,
     line-height: 11px;
   }
 
-  .head__title ~ a {
-    padding-left: 50px;
-  }
-
-  .sneakers-block__title {
+  .sneakers__title {
     font-size: 20px;
     line-height: 19px;
-  }
-
-  .sneakers-block__main-title {
     height: 19px;
     margin: 38px 10px 0;
     flex-grow: 0;
   }
 
-  .sneakers {
+  .sneakers-row {
     height: 248px;
     margin-top: -10px;
   }
@@ -746,12 +729,11 @@ img ~ a,
     padding: 24px 15px 26px 24px;
     }
 
-  .head__title,
-  .head__title ~ a {
+  .head {
     padding-left: 25px;
   }
 
-  .sneakers-block__main-title {
+  .sneakers__title {
     text-align: left;
     margin-left: 50px;
   }
