@@ -1118,6 +1118,7 @@ img ~ a,
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0;
   }
 
   .footer__nav {
@@ -1128,7 +1129,7 @@ img ~ a,
   .footer__nav_2,
   .footer__nav_3,
   .footer__nav_4 {
-    margin: 0 0 52px;
+    margin: 0 0 40px;
   }
 
   .footer__nav_1 {
@@ -1144,12 +1145,16 @@ img ~ a,
     line-height: 14px;
   }
 
+  .footer__link_up {
+    margin-bottom: 8px;
+  }
+
   .footer__link ~ br {
     display: inline-block;
   }
 
   .footer__button {
-    margin: 29px 0 104px;
+    margin: 25px 0 104px;
   }
 
 }
