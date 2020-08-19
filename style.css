@@ -383,7 +383,7 @@ img ~ a,
   line-height: 17px;
   text-align: right;
   text-transform: uppercase;
-  color: #000000;
+  color: #000;
   opacity: 0.3;
 }
 
@@ -417,7 +417,6 @@ img ~ a,
   flex-direction: row;
   justify-content: center;
   margin: 0 0 40px 5px;
-
 }
 
 .footer__nav {
@@ -445,7 +444,7 @@ img ~ a,
   margin-bottom: 6px;
 }
 
-.footer__link ~br {
+.footer__link ~ br {
   display: none;
 }
 
@@ -1145,7 +1144,7 @@ img ~ a,
     line-height: 14px;
   }
 
-  .footer__link ~br {
+  .footer__link ~ br {
     display: inline-block;
   }
 
