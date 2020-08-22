@@ -16,7 +16,6 @@ a {
 }
 
 .header {
-  width: inherit;
   margin-bottom: 28px;
 }
 
@@ -127,7 +126,6 @@ img ~ a,
 .sneakers__title {
   font-size: 22px;
   line-height: 21px;
-  text-align: center;
   text-transform: uppercase;
   margin: 53px 0 0 0;
 }
@@ -453,7 +451,7 @@ img ~ a,
 }
 
 .footer__button {
-  width: 140px;
+  width: 100%;
   height: 30px;
   background-color: #000;
   color: #fff;
@@ -461,7 +459,7 @@ img ~ a,
 }
 
 .footer__social {
-  width: 140px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -599,22 +597,18 @@ img ~ a,
   }
 
   .footer {
-    padding-top: 65px;
-  }
-
-  .footer__nav_4 {
-    margin-right: 120px;
-  }
-
-  .footer__copyright {
-    width: 775px;
-    margin: 0 150px;
+    margin-left: -50px;
+    padding-left: 100px;
   }
 }
 
 @media screen and (max-width: 1023px) {
   body {
     width: 768px;
+  }
+
+  main {
+    overflow: hidden;
   }
 
   .header {
@@ -627,7 +621,6 @@ img ~ a,
 
   .mobile-menu {
     display: flex;
-    width: inherit;
     justify-content: space-between;
     align-items: center;
     padding: 41px 46px 10px 43px;
@@ -647,7 +640,6 @@ img ~ a,
 
   .head {
     background: url(Pics/rob-potter-422534-unsplash2.png) no-repeat;
-    width: 1527px;
     height: 415px;
     padding: 125px 44px 0;
   }
@@ -668,7 +660,6 @@ img ~ a,
     font-size: 30px;
     line-height: 29px;
     display: inline-block;
-    width: 350px;
     height: 29px;
     margin: 67px 20px 50px;
   }
@@ -747,7 +738,7 @@ img ~ a,
   .about::before {
     content: "";
     position: absolute;
-    width: 768px;
+    width: 100%;
     height: 26px;
     border: 26px solid transparent;
     border-bottom: 0 solid transparent;
@@ -914,6 +905,7 @@ img ~ a,
   }
 
   .footer__copyright {
+    width: 100%;
     margin: 0;
   }
 
@@ -945,7 +937,6 @@ img ~ a,
 
   .head {
     background: url(Pics/rob-potter-422534-unsplash1.png) no-repeat;
-    width: 706px;
     height: 191px;
     padding: 70px 50px 0;
   }
@@ -1109,7 +1100,7 @@ img ~ a,
 
   .footer {
     align-items: center;
-    padding-top: 30px;
+    padding: 30px 70px;
   }
 
   .footer__row {
@@ -1173,9 +1164,5 @@ img ~ a,
   .sneakers__title {
     text-align: left;
     margin-left: 50px;
-  }
-
-  .about {
-    width: 330px;
   }
 }
