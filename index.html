@@ -11,19 +11,19 @@
       <nav class="menu">
         <div class="menu__left">
           <img class="menu__logo" src="Pics/Axion-logo-1.png" alt="Logo Axion">
-          <a class="menu__link menu__upper-link" href="#">shop</a>
-          <a class="menu__link menu__upper-link" href="#">news</a>
-          <a class="menu__link menu__upper-link" href="#">team</a>
-          <a class="menu__link menu__upper-link" href="#">legacy</a>
-          <a class="menu__link menu__upper-link" href="#">help</a>
+          <a class="menu__link" href="#">shop</a>
+          <a class="menu__link" href="#">news</a>
+          <a class="menu__link" href="#">team</a>
+          <a class="menu__link" href="#">legacy</a>
+          <a class="menu__link" href="#">help</a>
         </div>
         <div class="menu__right">
           <div class="menu__search">
             <input class="menu__search-row" type="search">
             <img class="menu__glass" src="Pics/glass.png" alt="search-icon">
           </div>
-          <a class="menu__link menu__upper-link" href="#">sign in</a>
-          <a class="menu__link menu__upper-link" href="#">cart</a><span>1</span>
+          <a class="menu__link" href="#">sign in</a>
+          <a class="menu__link" href="#">cart</a><span>1</span>
           <img class="menu__lang" src="Pics/flag.png" alt="language">
         </div>
       </nav>
@@ -37,12 +37,12 @@
         <h1 class="head__title">Legendary<br>footwear<br>reborn.</h1>
         <a class="link upper-link upper-link_white" href="#">shop now<img src="Pics/Arrow.png" alt="arrow"></a>
       </section>
-      <article class="sneakers-block">
-        <h3 class="sneakers-block__title sneakers-block__main-title">Featured product</h3>
-        <article class="sneakers">
-          <article class="sneakers__item sneakers__item-1">
-            <img class="sneakers_img" src="Pics/boots_black.png" alt="boots_black">
-            <p class="sneakers_name">Atlas Black/Rasta Axion</p>
+      <article class="sneakers">
+        <h3 class="sneakers__title">Featured product</h3>
+        <article class="sneakers__row">
+          <div class="sneakers__item sneakers__item-1">
+            <img class="sneakers__img" src="Pics/boots_black.png" alt="boots_black">
+            <p class="sneakers__name">Atlas Black/Rasta Axion</p>
             <div class="sneakers__info">
               <span class="sneakers__price">$89.00</span>
               <span class="sneakers__circles">
@@ -52,10 +52,10 @@
                 <p class="sneakers__circle sneakers__circle_yellow"></p>
               </span>
             </div>
-          </article>
-          <article class="sneakers__item sneakers__item-2">
-            <img class="sneakers_img" src="Pics/boots_brown.png" alt="boots_brown">
-            <p class="sneakers_name">Camel/Chili Pepper Axion</p>
+          </div>
+          <div class="sneakers__item sneakers__item-2">
+            <img class="sneakers__img" src="Pics/boots_brown.png" alt="boots_brown">
+            <p class="sneakers__name">Camel/Chili Pepper Axion</p>
             <div class="sneakers__info">
               <span class="sneakers__price">$74.00</span>
               <span class="sneakers__circles">
@@ -65,10 +65,10 @@
                 <p class="sneakers__circle sneakers__circle_yellow"></p>
               <span>
             </div>
-          </article>
-          <article class="sneakers__item sneakers__item-3">
-            <img class="sneakers_img" src="Pics/boots_gray.png" alt="boots_gray">
-            <p class="sneakers_name">Mandel Smoke/Rust Axion</p>
+          </div>
+          <div class="sneakers__item sneakers__item-3">
+            <img class="sneakers__img" src="Pics/boots_gray.png" alt="boots_gray">
+            <p class="sneakers__name">Mandel Smoke/Rust Axion</p>
             <div class="sneakers__info">
               <span class="sneakers__price">$69.00</span>
               <span class="sneakers__circles">
@@ -78,10 +78,10 @@
                 <p class="sneakers__circle sneakers__circle_yellow"></p>
               <span>
               </div>
-          </article>
-          <article class="sneakers__item sneakers__item-4">
-            <img class="sneakers_img" src="Pics/boots_light_gray.png" alt="boots_light_gray">
-            <p class="sneakers_name">Cloud/Electric Blue Axion</p>
+          </div>
+          <div class="sneakers__item sneakers__item-4">
+            <img class="sneakers__img" src="Pics/boots_light_gray.png" alt="boots_light_gray">
+            <p class="sneakers__name">Cloud/Electric Blue Axion</p>
             <div class="sneakers__info">
               <span class="sneakers__price">$69.00</span>
               <span class="sneakers__circles">
@@ -91,11 +91,11 @@
                 <p class="sneakers__circle sneakers__circle_yellow"></p>
               <span>
             </div>
-          </article>
+          </div>
         </article>
       </article>
       <section class="about">
-        <img class="about_img" src="Pics/rectangle 4.png" alt="jumping man">
+        <img class="about_img" src="Pics/Rectangle4.png" alt="jumping man">
         <div class="about__text">
           <h2 class="small-title">Legendary<br> footwear reborn</h2>
           <p class="text text_white">
@@ -106,93 +106,104 @@
           <a class="link upper-link upper-link_white" href="#">learn more<img src="Pics/Arrow.png" alt="arrow"></a>
         </div>
       </section>
-      <h2 class="title section-title">Recent stories</h2>
-      <section class="row">
-        <article class="story">
-          <img src="Pics/Rectangle 3.7.png" alt="Justin Anagoa">
-          <h2 class="subtitle">Presents Justin Anagoa</h2>
-          <p class="text">
+      <section class="stories">
+        <h2 class="stories__title">Recent stories</h2>
+        <article class="stories__row">
+        <div class="stories__item">
+          <img class="stories__img" src="Pics/Rectangle3.7.png" alt="Justin Anagoa">
+          <h2 class="stories__subtitle">Presents Justin Anagoa</h2>
+          <p class="stories__text">
             Anagoa’s been a part of the skater’s family ever since his early teenage years.
             He’s been known to go big on and off the board, but it’s been rare we get a glimpse into
             how Anagoa lives his day-to-day, to see what makes Anagoa tick.
           </p>
-            <a class="link upper-link" href="#">Learn more<img src="Pics/Arrow_black.png" alt="arrow"></a>
-            <span class="date">11.08.2018</span>
-        </article>
-        <article class="story">
-          <img src="Pics/rectangle 3.8.png" alt="First Frontside flip">
-          <h2 class="subtitle">First Frontside flip</h2>
-          <p class="text">
+          <div class="stories__footer">
+            <a class="stories__link" href="#">Learn more<img class="stories__arrow" src="Pics/Arrow_black.png" alt="arrow"><img class="stories__arrow stories__arrow_white" src="Pics/Arrow.png" alt="arrow"></a>
+            <span class="stories__date">11.08.2018</span>
+          </div>
+        </div>
+        <div class="stories__item stories__item_2">
+          <img class="stories__img" src="Pics/Rectangle3.8.png" alt="First Frontside flip">
+          <h2 class="stories__subtitle">First Frontside flip</h2>
+          <p class="stories__text">
             Yoon recently discusses his first time shooting a signature Andrew Reynolds frontside flip on The Berrics.
             Click the image below to see the full gallery and read up on what happened that day. Photo:Yoon Sul
           </p>
-          <a class="link upper-link" href="#">Learn more<img src="Pics/Arrow_black.png" alt="arrow"></a>
-          <span class="date">17.08.2018</span>
-        </article>
-        <article class="story">
-          <img src="Pics/rectangle 3.9.png" alt="Kevin Baekkel">
-          <h2 class="subtitle">Kevin Baekkel is Pro</h2>
-          <p class="text">
+          <div class="stories__footer">
+            <a class="stories__link" href="#">Learn more<img class="stories__arrow" src="Pics/Arrow_black.png" alt="arrow"><img class="stories__arrow stories__arrow_white" src="Pics/Arrow.png" alt="arrow"></a>
+            <span class="stories__date">17.08.2018</span>
+          </div>
+        </div>
+        <div class="stories__item stories__item_3">
+          <img class="stories__img" src="Pics/Rectangle3.9.png" alt="Kevin Baekkel">
+          <h2 class="stories__subtitle">Kevin Baekkel is Pro</h2>
+          <p class="stories__text">
             Creature proudly announced today that they’re officially adding Kevin Baekkel
             to their pro roster. After paying his dues for years,
             killing it on last years Thrasher King of the Road,
             and constantly lighting every spot he hits on fire.
           </p>
-          <a class="link upper-link" href="#">Learn more<img src="Pics/Arrow_black.png" alt="arrow"></a>
-          <span class="date">29.07.2018</span>
-        </article>
+          <div class="stories__footer">
+            <a class="stories__link" href="#">Learn more<img src="Pics/Arrow_black.png" alt="arrow"></a>
+            <span class="stories__date">29.07.2018</span>
+          </div>
+        </div>
       </section>
       <div class="gallery">
-        <h2 class="tag">#AXIONfootwear</h2>
-        <span class="pics-row">
-          <img src="Pics/rectangle 3.1.png" alt="Picture">
-          <img src="Pics/rectangle 3.2.png" alt="Picture">
-          <img src="Pics/rectangle 3.3.png" alt="Picture">
-          <img src="Pics/rectangle 3.4.png" alt="Picture">
-          <img src="Pics/rectangle 3.5.png" alt="Picture">
-          <img src="Pics/rectangle 3.6.png" alt="Picture">
-      </span>
+        <h2 class="gallery__tag">#AXIONfootwear</h2>
+        <div class="gallery__row">
+          <img class="gallery_img" src="Pics/Rectangle3.0.png" alt="Picture">
+          <img class="gallery_img" src="Pics/Rectangle3.1.png" alt="Picture">
+          <img class="gallery_img" src="Pics/Rectangle3.2.png" alt="Picture">
+          <img class="gallery_img" src="Pics/Rectangle3.3.png" alt="Picture">
+          <img class="gallery_img" src="Pics/Rectangle3.4.png" alt="Picture">
+          <img class="gallery_img" src="Pics/Rectangle3.5.png" alt="Picture">
+          <img class="gallery_img gallery_mobile-375" src="Pics/Rectangle3.6.png" alt="Picture">
+          <img class="gallery_img gallery_mobile-768" src="Pics/Rectangle3.0.png" alt="Picture">
+      </div>
     </div>
   </main>
     <footer class="footer">
-      <nav class="nav-row">
-        <a class="link upper-link upper-link_white" href="#">MY ACCOUNT</a>
-        <a class="link" href="#">Login</a>
-        <a class="link" href="#">Wish List</a>
-        <a class="link" href="#">Order History</a>
-        <a class="link" href="#">Track order</a>
-        <a class="link" href="#">Gift cards</a>
-      </nav>
-      <nav class="nav-row">
-        <a class="link upper-link upper-link_white" href="#">CUSTOMER SERVICE</a>
-        <a class="link" href="#">Contact us</a>
-        <a class="link" href="#">Help/FAQ</a>
-        <a class="link" href="#">Shipping</a>
-        <a class="link" href="#">Returns</a>
-        <a class="link" href="#">Size guide</a>
-        <a class="link" href="#">Holiday shopping</a>
-      </nav>
-      <nav class="nav-row">
-        <a class="link upper-link upper-link_white" href="#">MISCELLANEOUS</a>
-        <a class="link" href="#">About Us</a>
-        <a class="link" href="#">Careers</a>
-        <a class="link" href="#">Privacy Policy</a>
-        <a class="link" href="#">Terms & Conditions</a>
-        <a class="link" href="#">Ethical Policy</a>
-        <a class="link" href="#">Homepage US/UK</a>
-      </nav>
-      <nav class="nav-row">
-        <a class="link upper-link upper-link_white" href="#">NEWSLETTER SIGN UP</a>
-        <a class="link" href="#">Get 10% Off Your Next Order!</a>
-        <button class="signup-button">SIGN UP</button>
-        <div class="social-links">
-          <img src="Pics/facebook.png" alt=alt="facebook">
-          <img src="Pics/twitter.png" alt=alt="twitter">
-          <img src="Pics/insta.png" alt=alt="instagram">
-          <img src="Pics/pinterest.png" alt=alt="pinterest">
-        </div>
-      </nav>
-      <p class="coperight">&#169; 2019 Axion. All rights reserved.</p>
+      <section class="footer__row">
+        <nav class="footer__nav footer__nav_1">
+          <a class="footer__link footer__link_up" href="#">MY ACCOUNT</a>
+          <a class="footer__link" href="#">Login</a>
+          <a class="footer__link" href="#">Wish List</a>
+          <a class="footer__link" href="#">Order History</a>
+          <a class="footer__link" href="#">Track order</a>
+          <a class="footer__link" href="#">Gift cards</a>
+        </nav>
+        <nav class="footer__nav footer__nav_2">
+          <a class="footer__link footer__link_up" href="#">CUSTOMER SERVICE</a>
+          <a class="footer__link" href="#">Contact us</a>
+          <a class="footer__link" href="#">Help/FAQ</a>
+          <a class="footer__link" href="#">Shipping</a>
+          <a class="footer__link" href="#">Returns</a>
+          <a class="footer__link" href="#">Size guide</a>
+          <a class="footer__link" href="#">Holiday shopping</a>
+        </nav>
+        <nav class="footer__nav footer__nav_3">
+          <a class="footer__link footer__link_up" href="#">MISCELLANEOUS</a>
+          <a class="footer__link" href="#">About Us</a>
+          <a class="footer__link" href="#">Careers</a>
+          <a class="footer__link" href="#">Privacy Policy</a>
+          <a class="footer__link" href="#">Terms & Conditions</a>
+          <a class="footer__link" href="#">Ethical Policy</a>
+          <a class="footer__link" href="#">Homepage US/UK</a>
+        </nav>
+        <nav class=" footer__nav footer__nav_4">
+          <a class="footer__link footer__link_up" href="#">NEWSLETTER SIGN UP</a>
+          <a class="footer__link" href="#">Get 10% Off Your Next <br>Order!</a>
+          <button class="footer__button">SIGN UP</button>
+          <div class="footer__social">
+            <img class="footer__img" src="Pics/facebook.png" alt=alt="facebook">
+            <img class="footer__img" src="Pics/twitter.png" alt=alt="twitter">
+            <img class="footer__img" src="Pics/insta.png" alt=alt="instagram">
+            <img class="footer__img" src="Pics/pinterest.png" alt=alt="pinterest">
+          </div>
+        </nav>
+      </section>
+      <p class="footer__copyright">&#169; 2019 Axion. All rights reserved.</p>
     </footer>
   </body>
 </html>
